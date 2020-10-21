@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react_kabzda/static/css/main.ce8fff6e.chunk.css",
+    "main.js": "/react_kabzda/static/js/main.100508d1.chunk.js",
+    "main.js.map": "/react_kabzda/static/js/main.100508d1.chunk.js.map",
+    "runtime-main.js": "/react_kabzda/static/js/runtime-main.af04f6f6.js",
+    "runtime-main.js.map": "/react_kabzda/static/js/runtime-main.af04f6f6.js.map",
+    "static/js/2.b8e4b0b1.chunk.js": "/react_kabzda/static/js/2.b8e4b0b1.chunk.js",
+    "static/js/2.b8e4b0b1.chunk.js.map": "/react_kabzda/static/js/2.b8e4b0b1.chunk.js.map",
+    "index.html": "/react_kabzda/index.html",
+    "precache-manifest.23c38579065486b04c3a1445d636e30f.js": "/react_kabzda/precache-manifest.23c38579065486b04c3a1445d636e30f.js",
+    "service-worker.js": "/react_kabzda/service-worker.js",
+    "static/css/main.ce8fff6e.chunk.css.map": "/react_kabzda/static/css/main.ce8fff6e.chunk.css.map",
+    "static/js/2.b8e4b0b1.chunk.js.LICENSE.txt": "/react_kabzda/static/js/2.b8e4b0b1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.af04f6f6.js",
+    "static/js/2.b8e4b0b1.chunk.js",
+    "static/css/main.ce8fff6e.chunk.css",
+    "static/js/main.100508d1.chunk.js"
+  ]
+}
