@@ -165,25 +165,25 @@ function App() {
                             if (tl.filter === "completed") {
                                 taskForTodoList = tasks[tl.id].filter(t => t.isDone)
                             }
-                            return ( <Grid item >
+                            return (<Grid item>
                                     <Paper elevation={5} style={{padding: "15px"}}>
 
 
-                                <TodoList
-                                    id={tl.id}
-                                    key={tl.id}
-                                    title={tl.title}
-                                    addTask={addTask}
-                                    filter={tl.filter}
-                                    tasks={taskForTodoList}
-                                    removeTask={removeTask}
-                                    addTodolist={addTodolist}
-                                    changeFilter={changeFilter}
-                                    removeTodoList={removeTodoList}
-                                    changeTaskTitle={changeTaskTitle}
-                                    changeTaskStatus={changeTaskStatus}
-                                    changeTodoListTitle={changeTodoListTitle}
-                                />
+                                        <TodoList
+                                            id={tl.id}
+                                            key={tl.id}
+                                            title={tl.title}
+                                            addTask={addTask}
+                                            filter={tl.filter}
+                                            tasks={taskForTodoList}
+                                            removeTask={removeTask}
+                                            addTodolist={addTodolist}
+                                            changeFilter={changeFilter}
+                                            removeTodoList={removeTodoList}
+                                            changeTaskTitle={changeTaskTitle}
+                                            changeTaskStatus={changeTaskStatus}
+                                            changeTodoListTitle={changeTodoListTitle}
+                                        />
                                     </Paper>
                                 </Grid>
                             )
