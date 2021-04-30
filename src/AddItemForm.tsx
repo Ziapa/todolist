@@ -7,7 +7,7 @@ type AddItemFormPropsType = {
     addItem: (newTitle: string) => void
 }
 
-export const AddItemForm = (props: AddItemFormPropsType) => {
+export const  AddItemForm = React.memo ((props: AddItemFormPropsType) => {
 
     const addItem = () => {
         if (newTitle.trim()) {
@@ -25,20 +25,17 @@ export const AddItemForm = (props: AddItemFormPropsType) => {
         setNewTitle(e.currentTarget.value)
     }
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
-        setError(null)
+        if (error !== null) {
+            setError(null)
+        }
+
+
         if (e.key === "Enter") {
             addItem()
         }
     }
     return (
         <div>
-            {/*<input*/}
-            {/*    value={newTitle}*/}
-            {/*    onChange={onChangeHandler}*/}
-            {/*    onKeyPress={onKeyPressHandler}*/}
-            {/*    className={error ? "error" : ""}*/}
-            {/*/>*/}
-            {/*<button onClick={addItem}>+</button>*/}
             <TextField
                 size={"small"}
                 variant={"outlined"}
@@ -52,8 +49,6 @@ export const AddItemForm = (props: AddItemFormPropsType) => {
             <IconButton color={"primary"} onClick={addItem}>
                 <AddBox/>
             </IconButton>
-            {/*<Button variant={"contained"} color={"primary"} onClick={addItem}>+</Button>*/}
-            {/*{error && <div className={"error-message"}>{error}</div>}*/}
         </div>
     )
-}
+})
